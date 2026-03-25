@@ -218,9 +218,6 @@ This document outlines my personal home security setup, including network config
 | [router-settings.md](router-settings.md) | Router configuration notes |
 | [security-checklist.md](security-checklist.md) | Weekly security checklist |
 | [security-timeline.md](docs/security-timeline.md) | Security history and lessons learned |
-| [nmap-scan.png](images/nmap-scan.png) | Screenshot of network scan |
-| [router.jpg](images/router.jpg) | Router photo |
-| [virtualbox-lab.png](images/virtualbox-lab.png) | VirtualBox lab setup |
 
 ---
 
