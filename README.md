@@ -12,12 +12,16 @@ This document outlines my personal home security setup, including network config
 
 ## 🔧 Hardware & Network Infrastructure
 
+### Internet Provider
+- **Provider**: Primnet (fiber optic)
+- **Connection**: Stable, high-speed fiber
+
 ### Router
-- **Model**: ZTE ZXHN H2680 (Home Gateway)
-- **Firmware**: Latest (updated Sep 2024)
-- **Security**: WPA3 enabled
-- **Admin password**: Changed from default
-- **Guest network**: Disabled
+- **Model**: ZTE ZXHN H2680
+- **Provider-managed**: Configuration via ISP mobile app
+- **Security**: Management interface not exposed to LAN (ISP restriction)
+- **Firmware updates**: Handled automatically by ISP
+- **WiFi Security**: WPA3 (configured via ISP app)
 
 ### Network Devices
 
@@ -92,8 +96,8 @@ This document outlines my personal home security setup, including network config
 ## 🔄 Update Management
 
 - **All devices**: Manual updates triggered by notifications
-- **Router**: Firmware kept up to date
 - **Windows/Android/iOS**: Updated when notified
+- **Router**: Updates handled automatically by ISP
 
 ---
 
@@ -122,7 +126,7 @@ This document outlines my personal home security setup, including network config
 3. **2FA across devices** – Redundancy if one device is lost
 4. **Secure communication** – Signal for sensitive chats
 5. **Regular backups** – Manual but consistent
-6. **No guest network** – Reduces attack surface
+6. **ISP-managed router** – Adds a layer of security (no local web access)
 7. **Biometric everywhere** – Fast, secure access
 8. **Strong unique passwords** – No reuse across devices
 
@@ -130,7 +134,7 @@ This document outlines my personal home security setup, including network config
 
 ## 🔮 Future Improvements
 
-- [ ] VPN on router for whole network
+- [ ] VPN on router (if ISP allows)
 - [ ] DNS over HTTPS (Cloudflare 1.1.1.1)
 - [ ] Network traffic monitoring
 - [ ] Hardware security key (YubiKey)
