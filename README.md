@@ -200,6 +200,13 @@ This document outlines my personal home security setup, including network config
 
 ---
 
-## 📅 Last Updated
+**Ilie Lucian**  
+Technical Department Manager with 10+ years in IT infrastructure, networking, and hardware. Currently pursuing certifications in cybersecurity (TryHackMe SEC1, Security+, Network+).
 
+### Why I Built This
+I've been working in IT infrastructure for 10+ years, managing networks, hardware, and teams. Recently, I realized that what I was already doing (firewalls, VLANs, VPNs, incident response) has a name: **cybersecurity**. Now I'm formalizing my knowledge through certifications and documenting real projects to demonstrate my skills.
+
+**This repository is a living document of my cybersecurity journey.**
+
+## 📅 Last Updated
 March 2026
