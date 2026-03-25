@@ -13,58 +13,47 @@ This document outlines my personal home security setup, including network config
 ## 🔧 Hardware & Network Infrastructure
 
 ### Internet Provider
-- **Provider**: Primnet (fiber optic)
+- **Provider**: Fiber optic ISP (name withheld)
 - **Connection**: Stable, high-speed fiber
 
 ### Router
-- **Model**: ZTE ZXHN H2680
+- **Model**: ISP-provided router (model withheld for security)
 - **Provider-managed**: Configuration via ISP mobile app
 - **Security**: Management interface not exposed to LAN (ISP restriction)
 - **Firmware updates**: Handled automatically by ISP
 - **WiFi Security**: WPA3 (configured via ISP app)
 
-### Network Devices
+### Network Devices (General Description)
 
-| Device | Type | OS | Role |
-|--------|------|-----|------|
-| Samsung Galaxy S25 Ultra | Phone | Android | Daily driver |
-| iPhone 13 Pro Max | Phone | iOS | Secondary |
-| Samsung Galaxy Flip 3 | Phone | Android | Partner's device |
-| HP Laptop (Intel i5 + NVIDIA) | Laptop | Windows | Study / VM lab |
-| Lenovo Laptop (Ryzen) | Laptop | Windows | Work |
-| HP Laptop | Laptop | Windows | Backup / Media |
-| Lenovo Tablet | Tablet | Android | Partner's media |
-| Philips 278E | Monitor | - | External display |
+| Type | Count | Role |
+|------|-------|------|
+| Smartphones | Multiple | Personal and work communication |
+| Laptops | Multiple | Work, study, media |
+| Tablet | 1 | Media consumption |
+| External monitor | 1 | Extended display for study setup |
 
 ### Virtual Lab Environment
 - **Hypervisor**: Oracle VirtualBox
 - **Guest OS**: Ubuntu, Kali Linux
 - **Purpose**: Cybersecurity training, penetration testing practice, secure experimentation
 
-### Device Count
-- 3 phones
-- 3 laptops
-- 1 tablet
-- 1 external monitor
-- 2 virtual machines (Ubuntu, Kali)
-
 ---
 
 ## 🛡️ Endpoint Protection
 
-### Windows Devices (All Laptops)
-- **Windows Defender Firewall**: Enabled (default configuration)
-- **Windows Security**: Real-time protection, cloud-delivered protection, automatic sample submission
-- **Avira Antivirus**: Additional layer of protection on all Windows laptops
+### Windows Devices
+- **Windows Defender Firewall**: Enabled
+- **Windows Security**: Real-time protection, cloud-delivered protection
+- **Avira Antivirus**: Additional layer of protection
 
 ### Mobile Devices
 - **Android**: Google Play Protect (built-in)
-- **iOS**: Built-in security features, app sandboxing
+- **iOS**: Built-in security features
 
 ### Security Track Record
-- **Mobile devices**: No security breaches in 20+ years (Android, iOS)
+- **Mobile devices**: No security breaches in 20+ years
 - **Home network**: No security breaches in 2+ years
-- **Work network (Ubuntu server, laptops)**: No security breaches in 2+ years
+- **Work network**: No security breaches in 2+ years
 - **All connected devices**: No compromises since the 2023 incident (see below)
 
 ---
@@ -87,23 +76,23 @@ This document outlines my personal home security setup, including network config
 - Use separate emails for different purposes:
   - Work email
   - Personal email
-  - YouTube / social media email (this one receives phishing attempts daily)
+  - Social media email
 
 ---
 
 ## 📌 Real Incident & Lessons Learned
 
-### Breach (2 years ago — 2023)
-- **Cause**: Downloaded a modified version of a drawing program from a YouTube link
+### Breach (2 years ago)
+- **Cause**: Downloaded a modified version of a legitimate program from a YouTube link
 - **Mistake**: Ignored Windows Security alerts during installation
 - **Impact**: Malware infection
-- **Response**: Changed hundreds of passwords, reinstalled Windows, fully cleaned the system
+- **Response**: Changed all passwords, reinstalled Windows, fully cleaned the system
 
 ### Key Lessons:
 - No software from untrusted sources, even if it looks legitimate
 - Never ignore security alerts — they exist for a reason
 - Even open-source software can be compromised when downloaded from unofficial sources
-- Regular advanced scans with tools like CCleaner and Avira Pro help identify subtle threats missed by basic protection
+- Regular advanced scans help identify subtle threats missed by basic protection
 
 ---
 
@@ -121,17 +110,17 @@ This document outlines my personal home security setup, including network config
 ### Password Manager
 - **Tool**: Standard Notes (end-to-end encrypted)
 - **Notes**: Work passwords, Personal passwords, Partner's passwords
-- **Synced devices**: S25 Ultra, iPhone 13, Flip 3
+- **Synced devices**: Multiple mobile devices
 
 ### Two-Factor Authentication (2FA)
 - **Tool**: Google Authenticator
-- **Synced across**: 3 mobile devices
+- **Synced across**: Multiple mobile devices
 - **All critical accounts**: Protected with 2FA
 
 ### Account Separation
 
-| Device | Accounts |
-|--------|----------|
+| Device Type | Accounts |
+|-------------|----------|
 | Work laptop | Work only |
 | Study laptop | Personal only |
 | Media laptop | Personal only |
@@ -144,14 +133,14 @@ This document outlines my personal home security setup, including network config
 
 - **Tool**: Signal (end-to-end encrypted)
 - **Used for**: Work-related communication
-- **Platforms**: All 3 mobile devices
+- **Platforms**: Mobile devices
 
 ---
 
 ## 💾 Backup Strategy
 
-- **External HDD**: 1TB
-- **Frequency**: Manual, minimum once per week
+- **External HDD**: Regular manual backups
+- **Frequency**: Minimum once per week
 - **Content**: No major weekly changes
 
 ---
@@ -162,7 +151,7 @@ This document outlines my personal home security setup, including network config
 - **Windows/Android/iOS**: Updated when notified
 - **Avira**: Automatic updates enabled
 - **Router**: Updates handled automatically by ISP
-- **Virtual machines**: Updated regularly (Ubuntu, Kali)
+- **Virtual machines**: Updated regularly
 
 ---
 
@@ -171,16 +160,6 @@ This document outlines my personal home security setup, including network config
 - No unauthorized physical access to devices
 - No external guests on the network
 - All devices locked when unattended
-
----
-
-## 📱 Cross-Device Sync
-
-| Service | Synced Devices | Purpose |
-|---------|----------------|---------|
-| Standard Notes | S25 Ultra, iPhone 13, Flip 3 | Passwords, work codes |
-| Google Authenticator | 3 mobile devices | 2FA codes |
-| Signal | 3 mobile devices | Secure communication |
 
 ---
 
@@ -194,9 +173,9 @@ This document outlines my personal home security setup, including network config
 6. **ISP-managed router** – Adds a layer of security (no local web access)
 7. **Biometric everywhere** – Fast, secure access
 8. **Strong unique passwords** – No reuse across devices
-9. **Defense in depth** – Windows Firewall + Windows Security + Avira on all laptops
+9. **Defense in depth** – Multiple security layers
 10. **Virtual lab** – Safe environment for testing and learning
-11. **Proven track record** – No mobile breaches in 20+ years; no network breaches in 2+ years
+11. **Proven track record** – Long history of no security breaches
 
 ---
 
