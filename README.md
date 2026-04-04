@@ -13,7 +13,7 @@ This document outlines my personal home security setup, including network config
 ## 🔧 Hardware & Network Infrastructure
 
 ### Internet Provider
-- **Provider**: Fiber optic ISP (name withheld)
+- **Provider**: Fiber optic ISP PRIMETEL
 - **Connection**: Stable, high-speed fiber
 
 ### Router
