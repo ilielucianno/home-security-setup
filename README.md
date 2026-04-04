@@ -17,7 +17,7 @@ This document outlines my personal home security setup, including network config
 - **Connection**: Stable, high-speed fiber
 
 ### Router
-- **Model**: ISP-provided router (model withheld for security)
+- **Model**: ISP-provided router HUAWEI
 - **Provider-managed**: Configuration via ISP mobile app
 - **Security**: Management interface not exposed to LAN (ISP restriction)
 - **Firmware updates**: Handled automatically by ISP
